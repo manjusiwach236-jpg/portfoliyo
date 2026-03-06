@@ -15,6 +15,7 @@ const projects = [
             "Built with React and Tailwind CSS. Includes product pages, cart, and checkout.",
         image: ecommerce,
         internalLink: ROUTES.SCREENSHOTS_FRONTEND,
+        github: "https://github.com/manjusiwach236-jpg", // added GitHub link
     },
     {
         title: "Social Media Backend",
@@ -22,6 +23,7 @@ const projects = [
             "Django backend API with authentication, posts, likes, comments.",
         image: socialmedia,
         internalLink: ROUTES.SCREENSHOTS_BACKEND,
+        github: "https://github.com/manjusiwach236-jpg", // added GitHub link
     },
 ];
 
@@ -79,6 +81,7 @@ const Home = () => {
                             description={project.description}
                             image={project.image}
                             internalLink={project.internalLink}
+                            github={project.github} // pass GitHub link to ProjectCard
                         />
                     ))}
                 </div>
